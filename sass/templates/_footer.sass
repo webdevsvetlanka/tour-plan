@@ -106,13 +106,17 @@
     outline: none
     flex-basis: 47%
     margin-bottom: 14px
+    &::placeholder
+      color: #BDBDBD
   &__message
     width: 100%
     border: none
     outline: none
     border-radius: 4px
     padding: 18px 23px
-    margin-bottom: 22px
+    margin-bottom: 21px
+    font-size: 12px
+    line-height: 15px
   &__button
     font-weight: 700
     font-size: 12px
@@ -146,12 +150,21 @@
       color: #ffffff
       font-size: 12px
       line-height: 15px
+      transition: color .3s
+      &:hover
+        color: #BDBDBD
   &-cards
     width: 136px
     margin-left: auto
     position: absolute
     right: 0
     margin-top: -4px
+  &__btn
+    &-block
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
 
 
 
