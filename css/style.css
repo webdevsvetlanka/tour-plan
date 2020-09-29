@@ -2014,6 +2014,7 @@ template {
     border: none;
     outline: none;
     background-color: transparent;
+    padding: 10px;
   }
   .header-top__mb-line {
     display: block;
