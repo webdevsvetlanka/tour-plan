@@ -59,9 +59,11 @@ $(document).ready(function () {
     });
   });
 
+  // Мобильное меню
   var menuButton = $(".header-top__mb");
 
   menuButton.on("click", function () {
+    $(".header-top__mb-line").toggleClass("active");
     $(".navbar").toggleClass("active");
   });
 });

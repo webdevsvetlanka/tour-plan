@@ -158,7 +158,7 @@
     max-width: 576px
     width: 92%
   .header
-    &__mb
+    &--mb
       &--fixed
         position: fixed
         width: 100%
@@ -205,8 +205,17 @@
             top: 4px
             left: 0
             background-color: $text-color
+            transition: .3s
           &::after
             top: -4px  
+          &.active 
+            background-color: transparent
+            &::before
+              transform: rotate(45deg)
+              top: 0
+            &::after
+              transform: rotate(-45deg)
+              top: 0
   .user
     margin-bottom: 7px
     &__name

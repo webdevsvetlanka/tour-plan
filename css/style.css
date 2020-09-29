@@ -1972,7 +1972,7 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .header__mb--fixed {
+  .header--mb--fixed {
     position: fixed;
     width: 100%;
     top: 0;
@@ -2030,9 +2030,24 @@ template {
     top: 4px;
     left: 0;
     background-color: #333333;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .header-top__mb-line::after {
     top: -4px;
+  }
+  .header-top__mb-line.active {
+    background-color: transparent;
+  }
+  .header-top__mb-line.active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 0;
+  }
+  .header-top__mb-line.active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 0;
   }
   .user {
     margin-bottom: 7px;
