@@ -1,8 +1,9 @@
 $(document).ready(function () {
+  //  Вызыв функции для IE
   objectFitImages(".js-fit-img");
 
+  // Слайдер в секции HOTEL
   var hotelSwiper = new Swiper(".hotel__slider-container", {
-    // Optional parameters
     loop: true,
     autoplay: {
       delay: 3000,
@@ -12,32 +13,25 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
     effect: "fade",
-    // Navigation arrows
+
     navigation: {
       nextEl: ".slider-btn_next",
       prevEl: ".slider-btn_prev",
     },
   });
 
+  // Карта
   ymaps.ready(init);
   function init() {
     // Создание карты.
     var myMap = new ymaps.Map("map", {
       center: [43.07879784, 5.8914852],
       zoom: 18,
-
-      // myGeoObject = new ymaps.GeoObject({
-      //       // Описание геометрии.
-      //       geometry: {
-      //           type: "Point",
-      //           coordinates: [43.07879784, 5.8914852]
-      //       },
-      //   }, ),
     });
   }
 
+  // Слайдер в блоке REVIEWS
   var reviewsSwiper = new Swiper(".reviews__slider-container", {
-    // Optional parameters
     loop: true,
     autoplay: {
       delay: 9000,
@@ -47,13 +41,14 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
     effect: "fade",
-    // Navigation arrows
+
     navigation: {
       nextEl: ".reviews-btn_next",
       prevEl: ".reviews-btn_prev",
     },
   });
 
+  // Прокрутка на фоновом изображении
   $window = $(window);
   $('section[data-type="background"]').each(function () {
     var $bgobj = $(this);
@@ -64,11 +59,9 @@ $(document).ready(function () {
     });
   });
 
-  // $(window).scroll(function () {
-  //   var st = $(this).scrollTop();
+  var menuButton = $(".header-top__mb");
 
-  //   $(".newsletter img").css({
-  //     transform: "translate(0%, " + st / 20 + "%",
-  //   });
-  // });
+  menuButton.on("click", function () {
+    $(".navbar").toggleClass("active");
+  });
 });

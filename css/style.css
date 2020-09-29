@@ -514,6 +514,14 @@ template {
   color: #FFFFFF;
 }
 
+.navbar-menu__item--mb--visible {
+  display: none;
+}
+
+.navbar.active {
+  display: block;
+}
+
 .breadcrumb-list {
   list-style: none;
   display: -webkit-box;
@@ -878,7 +886,7 @@ template {
 
 .newsletter-name {
   color: #fff;
-  z-index: inherit;
+  z-index: 98;
 }
 
 .newsletter__subtitle {
@@ -1957,18 +1965,54 @@ template {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 82px;
+  }
   .container {
     max-width: 576px;
     width: 92%;
   }
-  .header__search, .header__user {
+  .header__mb--fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    -webkit-box-shadow: 1px 1px 10px #e4dcdc;
+            box-shadow: 1px 1px 10px #e4dcdc;
+  }
+  .header__search--mb--hidden, .header__user--mb--hidden {
     display: none;
+  }
+  .header__search--mb--visible, .header__user--mb--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 8px;
+  }
+  .header__search {
+    width: 72%;
+    margin-bottom: 23px;
+  }
+  .header-top {
+    background-color: #fff;
   }
   .header-top__mb {
     display: block;
     padding: 0;
     cursor: pointer;
     border: none;
+    outline: none;
     background-color: transparent;
   }
   .header-top__mb-line {
@@ -1990,8 +2034,39 @@ template {
   .header-top__mb-line::after {
     top: -4px;
   }
-  .navbar-menu {
+  .user {
+    margin-bottom: 7px;
+  }
+  .user__name {
+    margin-left: 0;
+    margin-top: 10px;
+    color: #fff;
+  }
+  .navbar {
     display: none;
+    position: fixed;
+    top: 82px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+  }
+  .navbar-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-menu__item {
+    margin-bottom: 17px;
+  }
+  .navbar-menu__item--mb--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .hotel-rating {
     display: none;
@@ -2161,7 +2236,7 @@ template {
     width: 100%;
   }
   .header-top {
-    padding: 23px 0;
+    padding: 24px 0;
   }
   .breadcrumb-list {
     padding: 21px 0 6px;
@@ -2171,6 +2246,9 @@ template {
   }
   .slider {
     margin-bottom: 20px;
+  }
+  .navbar {
+    top: 70px;
   }
   .hotel__slider-container {
     max-height: 179px;

@@ -152,19 +152,43 @@
     
 
 @media ( max-width: 768px)
+  body
+    padding-top: 82px
   .container
     max-width: 576px
     width: 92%
   .header
+    &__mb
+      &--fixed
+        position: fixed
+        width: 100%
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+        box-shadow: 1px 1px 10px #e4dcdc
     &__search,
     &__user
-      display: none
+      &--mb
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      align-items: center
+      margin-top: 8px
+    &__search
+      width: 72%
+      margin-bottom: 23px
     &-top
+      background-color: #fff
       &__mb
         display: block
         padding: 0
         cursor: pointer
         border: none
+        outline: none
         background-color: transparent
         &-line
           display: block
@@ -182,10 +206,30 @@
             left: 0
             background-color: $text-color
           &::after
-            top: -4px        
+            top: -4px  
+  .user
+    margin-bottom: 7px
+    &__name
+      margin-left: 0 
+      margin-top: 10px
+      color: #fff     
   .navbar
+    display: none
+    position: fixed
+    top: 82px
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 100
     &-menu
-      display: none
+      &__list
+        flex-direction: column
+        align-items: center
+      &__item
+        margin-bottom: 17px
+        &--mb
+          &--visible
+            display: flex
   .hotel
     &-rating
       display: none
@@ -301,7 +345,7 @@
     svg
       width: 100%
   .header-top 
-    padding: 23px 0
+    padding: 24px 0
   .breadcrumb
     &-list
       padding: 21px 0 6px
@@ -309,6 +353,8 @@
     max-width: 50%
   .slider
     margin-bottom: 20px
+  .navbar
+    top: 70px
   .hotel
     &__slider
       &-container 
