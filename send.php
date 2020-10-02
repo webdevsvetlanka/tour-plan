@@ -11,15 +11,22 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-if((!isset($_POST['name']) || !trim($_POST['name'])) &&
-(!isset($_POST['phone']) || !trim($_POST['phone'])) &&
-(!isset($_POST['message']) || !trim($_POST['message']))){
+if(isset($_POST['template']) && $_POST['template']=='template_1'){ 
   $title = "Подписка в Best Tour Plan";
 
   $body = "<h2>Новое обращение</h2>
      <b>Почта:</b> $email<br>
   ";
-}else{
+} else if(isset($_POST['template']) && $_POST['template']=='template_2'){ 
+  $title = "Новое бронирование Best Tour Plan";
+
+  $body = "<h2>Бронирование</h2>
+     <b>Имя:</b> $name<br>
+     <b>Почта:</b> $email<br>
+     <b>Телефон:</b> $phone<br><br>
+     <b>Сообщение:</b><br>$message
+  "; 
+}else{ 
   $title = "Новое обращение Best Tour Plan";
 
   $body = "<h2>Новое обращение</h2>
@@ -28,6 +35,24 @@ if((!isset($_POST['name']) || !trim($_POST['name'])) &&
      <b>Сообщение:</b><br>$message
   ";
 }
+
+// if((!isset($_POST['name']) || !trim($_POST['name'])) &&
+// (!isset($_POST['phone']) || !trim($_POST['phone'])) &&
+// (!isset($_POST['message']) || !trim($_POST['message']))){
+//   $title = "Подписка в Best Tour Plan";
+
+//   $body = "<h2>Новое обращение</h2>
+//      <b>Почта:</b> $email<br>
+//   ";
+// }else if((!isset($_POST['email']) || !trim($_POST['email'])) {
+//   $title = "Новое обращение Best Tour Plan";
+
+//   $body = "<h2>Новое обращение</h2>
+//      <b>Имя:</b> $name<br>
+//      <b>Телефон:</b> $phone<br><br>
+//      <b>Сообщение:</b><br>$message
+//   ";
+// }
 
 
 
@@ -90,10 +115,18 @@ else {$result = "error";}
 
 // Отображение результата
 
-if((!isset($_POST['name']) || !trim($_POST['name'])) &&
-(!isset($_POST['phone']) || !trim($_POST['phone'])) &&
-(!isset($_POST['message']) || !trim($_POST['message']))){
+if(isset($_POST['template']) && $_POST['template']=='template_1'){ 
   header('Location: thank2.php');
-}else{
+} else if(isset($_POST['template']) && $_POST['template']=='template_2'){ 
+  header('Location: book.php'); 
+}else{ 
   header('Location: thank.php');
 }
+
+// if((!isset($_POST['name']) || !trim($_POST['name'])) &&
+// (!isset($_POST['phone']) || !trim($_POST['phone'])) &&
+// (!isset($_POST['message']) || !trim($_POST['message']))){
+//   header('Location: thank2.php');
+// }else{
+//   header('Location: thank.php');
+// }

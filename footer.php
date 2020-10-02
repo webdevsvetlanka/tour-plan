@@ -129,6 +129,7 @@
         <div class="footer__contacts-form">
           <h3 class="footer__title">Send us a message</h3>
           <form action="send.php" method="POST" class="footer__form">
+            <input type="hidden" name="template" value="template_3">
             <input name="name" type="text" class="input footer__input" placeholder="Your Full Name*">
             <input name="phone" type="text" class="input footer__input" placeholder="Phone Number*">
             <textarea name="message" cols="30" rows="6" class="footer__message" placeholder="Message"></textarea>

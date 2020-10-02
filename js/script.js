@@ -66,4 +66,29 @@ $(document).ready(function () {
     $(".header-top__mb-line").toggleClass("active");
     $(".navbar").toggleClass("active");
   });
+
+  // MODAL OPEN
+  var modalButton = $('[data-toggle="modal"]');
+
+  modalButton.on("click", function () {
+    $(".modal__overlay").addClass("active");
+    $(".modal__dialog").addClass("active");
+  });
+
+  // MODAL CLOSE
+  var modalButtonClose = $('[data-toggle="modalClose"]');
+
+  modalButtonClose.on("click", function (e) {
+    e.preventDefault();
+
+    $(".modal__overlay").removeClass("active");
+    $(".modal__dialog").removeClass("active");
+  });
+
+  $(document).keyup(function (e) {
+    if (e.which == 27) {
+      $(".modal__overlay").removeClass("active");
+      $(".modal__dialog").removeClass("active");
+    }
+  });
 });

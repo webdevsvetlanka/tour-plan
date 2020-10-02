@@ -8,10 +8,12 @@
           </div>
           <br>
           <p class="descr">
-            Message sent! The manager will contact you within 1 hour!
+            <b>Message sent! The manager will contact you within 1 hour!</b>
           </p>
         </div>
       </div>
+      <br>
+      <br>
       <a href="index.php" class="hotel__button-link" >
         <button class="hotel__button-back">Back</button>
       </a>

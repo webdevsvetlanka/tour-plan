@@ -148,8 +148,19 @@
       &__inform
         &--big
           padding: 40px 30px 30px 30px
+  .modal
+    &__dialog
+      padding: 30px 70px
 
-    
+@media ( max-width: 910px)  
+  .modal
+    &__dialog
+      padding: 28px 64px
+    &__btn
+      &-block
+        flex-direction: column
+    &__button
+      margin-bottom: 15px
 
 @media ( max-width: 768px)
   body
@@ -345,6 +356,16 @@
         font-size: 20px
         &--big
           font-size: 22px
+  .modal
+    &__dialog
+      padding: 28px 58px
+      max-width: 560px
+    &__btn
+      &-block
+        flex-direction: column
+    &__button
+      width: 100%
+      margin-bottom: 15px
     
     
 @media ( max-width: 576px)
@@ -511,6 +532,10 @@
           width: 100%
           height: 60%
           border-radius: 0px 0px 8px 8px
+  .modal
+    &__dialog
+      padding: 25px 30px
+      max-width: 80%
 @media ( max-width: 450px)
   .packages
     &-card__text
