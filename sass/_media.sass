@@ -2,8 +2,8 @@
   .container
     max-width: 960px
   .hotel
-    &__swiper
-      &-container 
+    &__slider
+      &-container
         width: 590px
   .activity
     width: 230px
@@ -63,8 +63,8 @@
       min-height: 213px
       flex-direction: row
       justify-content: space-between
-    &__swiper
-      &-container 
+    &__slider
+      &-container
         width: 100%
   .slider
     width: 100%
@@ -93,7 +93,12 @@
     margin-bottom: 20px
     &-text
       max-width: 200px
-  
+  .newsletter
+    &-wrapper
+      justify-content: space-between
+    &__search
+      margin-left: 0
+
   .footer
     padding: 50px 0 33px
     &-content
@@ -149,10 +154,11 @@
         &--big
           padding: 40px 30px 30px 30px
   .modal
+    overflow-y: hidden
     &__dialog
       padding: 30px 70px
 
-@media ( max-width: 910px)  
+@media ( max-width: 910px)
   .modal
     &__dialog
       padding: 28px 64px
@@ -219,8 +225,8 @@
             background-color: $text-color
             transition: .3s
           &::after
-            top: -4px  
-          &.active 
+            top: -4px
+          &.active
             background-color: transparent
             &::before
               transform: rotate(45deg)
@@ -231,9 +237,9 @@
   .user
     margin-bottom: 7px
     &__name
-      margin-left: 0 
+      margin-left: 0
       margin-top: 10px
-      color: #fff     
+      color: #fff
   .navbar
     display: none
     position: fixed
@@ -273,7 +279,7 @@
       margin-right: 0
       margin-left: -2px
   .swiper
-    &-container 
+    &-container
       width: 100%
       max-height: 350px
   .booking,
@@ -339,7 +345,7 @@
           margin-bottom: 7px
       &__text
         &--big
-          font-size: 12px;
+          font-size: 12px
           line-height: 150.6%
           margin-bottom: 18px
       &__btn
@@ -366,8 +372,7 @@
     &__button
       width: 100%
       margin-bottom: 15px
-    
-    
+
 @media ( max-width: 576px)
   .container
     width: 88%
@@ -375,7 +380,7 @@
     width: 99px
     svg
       width: 100%
-  .header-top 
+  .header-top
     padding: 24px 0
   .breadcrumb
     &-list
@@ -388,7 +393,7 @@
     top: 70px
   .hotel
     &__slider
-      &-container 
+      &-container
         max-height: 179px
   .booking
     &-button
@@ -513,6 +518,9 @@
       left: 0
       right: auto
       top: 31px
+    &__input
+      &_group
+        flex-basis: 100%
   .packages
     &-wrapper
       grid-template-columns: 1fr
@@ -555,4 +563,3 @@
     &__inform
       &--big
         height: 50%
-

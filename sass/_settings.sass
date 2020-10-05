@@ -4,12 +4,45 @@ body
   font-family: 'Mulish', sans-serif
   color: $text-color
   background-color: $secondary
+
+  // &.modal-open
+
+  //   position: fixed
+  //   width: 100%
 .container
   max-width: 1110px
   margin: auto
-  img
-    max-width: 100%
-  a 
-    text-decoration: none
-  textarea
-    resize: none
+img
+  max-width: 100%
+a
+  text-decoration: none
+input[type=text]
+  text-transform: capitalize
+textarea
+  resize: none
+.button
+  outline: none
+  border: none
+  -webkit-transition: all .3s ease-in-out
+  transition: all .3s ease-in-out
+  &:hover
+    box-shadow: 0 0 10px 0 $primary inset, 0 0 10px 4px $primary
+    background-color: transparent
+  &.hotel__button-back
+    &:hover
+      color: $primary
+input.invalid
+  top: 0
+  left: 0
+  border: 1px solid $primary
+  &::placeholder
+    color: $primary
+em
+  color: $primary
+  position: absolute
+  top: 2px
+  left: 5px
+  right: 7px
+  font-size: 11px
+  font-weight: 700
+  text-align: end

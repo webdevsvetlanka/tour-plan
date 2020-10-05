@@ -14,16 +14,70 @@ body {
   margin: auto;
 }
 
-.container img {
+img {
   max-width: 100%;
 }
 
-.container a {
+a {
   text-decoration: none;
 }
 
-.container textarea {
+input[type=text] {
+  text-transform: capitalize;
+}
+
+textarea {
   resize: none;
+}
+
+.button {
+  outline: none;
+  border: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  -webkit-box-shadow: 0 0 10px 0 #EC1F46 inset, 0 0 10px 4px #EC1F46;
+          box-shadow: 0 0 10px 0 #EC1F46 inset, 0 0 10px 4px #EC1F46;
+  background-color: transparent;
+}
+
+.button.hotel__button-back:hover {
+  color: #EC1F46;
+}
+
+input.invalid {
+  top: 0;
+  left: 0;
+  border: 1px solid #EC1F46;
+}
+
+input.invalid::-webkit-input-placeholder {
+  color: #EC1F46;
+}
+
+input.invalid:-ms-input-placeholder {
+  color: #EC1F46;
+}
+
+input.invalid::-ms-input-placeholder {
+  color: #EC1F46;
+}
+
+input.invalid::placeholder {
+  color: #EC1F46;
+}
+
+em {
+  color: #EC1F46;
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  right: 7px;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: end;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -423,11 +477,28 @@ template {
   outline: none;
 }
 
+.search__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input::placeholder {
+  color: #BDBDBD;
+}
+
 .search__button {
   position: absolute;
   background: #EC1F46;
   border-radius: 0px 6px 6px 0px;
   border: none;
+  outline: none;
   height: 100%;
   width: 65px;
   padding-top: 1px;
@@ -726,6 +797,12 @@ template {
           transform: translate(55%, -40%);
   fill: #fff;
   fill-opacity: 0.8;
+  -webkit-transition: fill-opacity .3s;
+  transition: fill-opacity .3s;
+}
+
+.slider-btn:hover {
+  fill-opacity: 1;
 }
 
 .slider-btn_next {
@@ -907,6 +984,10 @@ template {
   height: 55px;
 }
 
+.newsletter__search_group {
+  position: relative;
+}
+
 .newsletter__input {
   width: 285px;
   padding: 19px 20px 18px 33px;
@@ -1078,6 +1159,12 @@ template {
 
 .reviews-btn svg {
   fill: #828282;
+  -webkit-transition: fill .3s;
+  transition: fill .3s;
+}
+
+.reviews-btn svg:hover {
+  fill: #504c4c;
 }
 
 .activities {
@@ -1616,6 +1703,7 @@ template {
 
 .footer__input {
   background: #FFFFFF;
+  width: 100%;
   border-radius: 4px;
   padding: 0 23px;
   height: 50px;
@@ -1624,9 +1712,6 @@ template {
   border: none;
   outline: none;
   color: #333333;
-  -ms-flex-preferred-size: 47%;
-      flex-basis: 47%;
-  margin-bottom: 14px;
 }
 
 .footer__input::-webkit-input-placeholder {
@@ -1643,6 +1728,13 @@ template {
 
 .footer__input::placeholder {
   color: #BDBDBD;
+}
+
+.footer__input_group {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  margin-bottom: 14px;
+  position: relative;
 }
 
 .footer__message {
@@ -1754,6 +1846,16 @@ template {
           align-items: center;
 }
 
+.footer__mail_link {
+  color: #fff;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+.footer__mail_link:hover {
+  color: #BDBDBD;
+}
+
 .modal__overlay {
   position: fixed;
   width: 100%;
@@ -1811,6 +1913,10 @@ template {
   line-height: 23px;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+.modal__form_group {
+  position: relative;
 }
 
 .modal__input {
@@ -1906,7 +2012,7 @@ template {
   .container {
     max-width: 960px;
   }
-  .hotel__swiper-container {
+  .hotel__slider-container {
     width: 590px;
   }
   .activity {
@@ -1996,7 +2102,7 @@ template {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .hotel__swiper-container {
+  .hotel__slider-container {
     width: 100%;
   }
   .slider {
@@ -2036,6 +2142,14 @@ template {
   }
   .activity-text {
     max-width: 200px;
+  }
+  .newsletter-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .newsletter__search {
+    margin-left: 0;
   }
   .footer {
     padding: 50px 0 33px;
@@ -2126,6 +2240,9 @@ template {
   }
   .packages-card__inform--big {
     padding: 40px 30px 30px 30px;
+  }
+  .modal {
+    overflow-y: hidden;
   }
   .modal__dialog {
     padding: 30px 70px;
@@ -2640,6 +2757,10 @@ template {
     left: 0;
     right: auto;
     top: 31px;
+  }
+  .footer__input_group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .packages-wrapper {
     -ms-grid-columns: 1fr;

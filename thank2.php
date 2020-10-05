@@ -11,7 +11,7 @@
       <br>
       <br>
       <a href="index.php" class="hotel__button-link" >
-        <button class="hotel__button-back">Back</button>
+        <button class="button hotel__button-back">Back</button>
       </a>
     </div>
   </section>
