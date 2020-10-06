@@ -115,7 +115,7 @@
              <svg width="20" height="20" class="footer__item-icon footer__item-icon--mr-2">
                <use xlink:href="img\icons.svg#call-footer"></use>
              </svg>
-             Tel (business hours) : <a href="tel:269 1500" class="footer__phone_link">269 1500</a><br>
+             Tel (business hours) : <a href="tel:2691500" class="footer__phone_link">269 1500</a><br>
              Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="footer__phone_link">52-56-61-38</a>
  (08:00 am – 20:00 pm)<br>
              Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__phone_link">52-56-61-38</a>
