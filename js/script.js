@@ -21,6 +21,7 @@ $(document).ready(function () {
   });
 
   // Карта
+
   ymaps.ready(init);
   function init() {
     // Создание карты.

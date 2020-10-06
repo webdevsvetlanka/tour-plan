@@ -49,7 +49,7 @@
       </div>
     </div>
     <div class="hotel-grid">
-      <div class="slider hotel__slider">
+      <div class="slider hotel__slider"  data-aos="fade-right">
         <div class="swiper-container hotel__slider-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide hotel__swiper-slide">
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="hotel__additional-info">
-        <div class="booking">
+        <div class="booking"  data-aos="fade-left">
           <div class="booking__info">
             <div class="price">
               <span class="price__start">price starts as</span>
@@ -114,7 +114,7 @@
           </div>
           <button data-toggle="modal" class="button booking-button">View Other Options</button>
         </div>
-        <div class="map" id="map"></div>
+        <div class="map" id="map"  data-aos="fade-left"></div>
       </div>
     </div>
   </div>
