@@ -124,7 +124,7 @@
   <div class="container">
     <h2 class="packages-title">Other Packages</h2>
     <div class="packages-wrapper">
-      <div class="packages-card packages-card--big">
+      <div class="packages-card packages-card--big"  data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image packages-card__block-image--big">
           <img src="./img/packages/img-1.jpg" alt="Packages: image"
             class="packages-card__image packages-card__image--big">
@@ -186,7 +186,7 @@
         </div>
       </div>
 
-      <div class="packages-card">
+      <div class="packages-card"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image">
           <img src="./img/packages/img-2.jpg" alt="Packages: image" class="packages-card__image">
           <span class="packages-card__sale">Flash Offer</span>
@@ -223,7 +223,7 @@
         </div>
       </div>
 
-      <div class="packages-card">
+      <div class="packages-card"  data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image">
           <img src="./img/packages/img-3.jpg" alt="Packages: image" class="packages-card__image">
           <span class="packages-card__sale">Flash Offer</span>
@@ -260,7 +260,7 @@
         </div>
       </div>
 
-      <div class="packages-card">
+      <div class="packages-card"  data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image">
           <img src="./img/packages/img-4.jpg" alt="Packages: image" class="packages-card__image">
           <span class="packages-card__sale">Flash Offer</span>
@@ -297,7 +297,7 @@
         </div>
       </div>
 
-      <div class="packages-card">
+      <div class="packages-card"  data-aos="fade-up" data-aos-delay="900" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image">
           <img src="./img/packages/img-5.jpg" alt="Packages: image" class="packages-card__image">
           <span class="packages-card__sale">Flash Offer</span>
@@ -491,28 +491,28 @@
   <div class="container">
     <h2 class="activities__title">Other Activities</h2>
     <div class="activities-wrapper">
-      <div class="activities__card activity">
+      <div class="activities__card activity"  data-aos="zoom-in"  data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease">
         <img src="./img/activities-card/card-1.jpg" alt="Card: activity" class="activity-imgbg">
         <div class="activity-text">
           <h3 class="activity-title">The curious corner<br> of chamarel</h3>
           <button class="button activity-button">Book Now</button>
         </div>
       </div>
-      <div class="activities__card activity">
+      <div class="activities__card activity"  data-aos="zoom-in"  data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease">
         <img src="./img/activities-card/card-2.jpg" alt="Card: activity" class="activity-imgbg js-fit-img">
         <div class="activity-text">
           <h3 class="activity-title">Gymkhana club golf course</h3>
           <button class="button activity-button">Book Now</button>
         </div>
       </div>
-      <div class="activities__card activity">
+      <div class="activities__card activity"  data-aos="zoom-in"  data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease">
         <img src="./img/activities-card/card-3.jpg" alt="Card: activity" class="activity-imgbg js-fit-img">
         <div class="activity-text">
           <h3 class="activity-title">Tamarind falls hiking<br> trip - full day</h3>
           <button class="button activity-button">Book Now</button>
         </div>
       </div>
-      <div class="activities__card activity">
+      <div class="activities__card activity"  data-aos="zoom-in"  data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease">
         <img src="./img/activities-card/card-4.jpg" alt="Card: activity" class="activity-imgbg js-fit-img">
         <div class="activity-text">
           <h3 class="activity-title">The blue marine discovery quest</h3>

@@ -474,7 +474,7 @@
       &-form
         grid-column: 1
         grid-row: 7
-        max-width: 81%
+        max-width: 100%
         margin-left: -1px
         margin-top: 22px
     &__form
@@ -552,6 +552,12 @@
     &-room
       &--big
         margin-bottom: 10px
+@media ( max-width: 400px)
+  .newsletter
+    &__input
+      width: 100%
+    &__search_group
+      width: 100%
 @media ( max-width: 354px)
   .packages-card
     height: 500px
@@ -563,3 +569,47 @@
     &__inform
       &--big
         height: 50%
+
+@media ( min-width: 992px)
+  .button
+    &:hover
+      box-shadow: 0 0 10px 0 $primary inset, 0 0 10px 4px $primary
+      background-color: transparent
+    &.hotel__button-back
+      &:hover
+        color: $primary
+  .footer
+    &__link
+      &:hover
+        color: #ffffff
+    &__social
+      &-link
+        svg
+          &:hover
+            fill: #fff
+    &__block
+      &-link
+        &:hover
+          color: #BDBDBD
+    &__phone
+      &_link
+        &:hover
+          color: #BDBDBD
+    &__mail
+      &_link
+        &:hover
+          color: #BDBDBD
+  .navbar
+    &-menu
+      &__link
+        &:hover
+          color: #bdbdbd
+  .slider
+    &-btn
+      &:hover
+        fill-opacity: 1
+  .reviews
+    &-btn
+      svg
+        &:hover
+          fill: #504c4c

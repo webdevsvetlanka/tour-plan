@@ -11,8 +11,6 @@
     font-size: 14px
     line-height: 160%
     transition: color .3s
-    &:hover
-      color: #ffffff
   &__title
     margin: 0
     text-transform: uppercase
@@ -53,6 +51,9 @@
       align-items: center
     &-link
       margin-left: 11px
+      svg
+        fill: #BDBDBD
+        transition: fill .3s
   &__legal
     margin-left: 83px
   &__title
@@ -159,8 +160,6 @@
       font-size: 12px
       line-height: 15px
       transition: color .3s
-      &:hover
-        color: #BDBDBD
   &-cards
     width: 136px
     margin-left: auto
@@ -173,9 +172,12 @@
       display: flex
       justify-content: space-between
       align-items: center
+  &__phone
+    &_link
+      display: contents
+      color: #fff
+      transition: color .3s
   &__mail
     &_link
       color: #fff
       transition: color .3s
-      &:hover
-        color: #BDBDBD

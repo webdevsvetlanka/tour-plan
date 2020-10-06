@@ -86,6 +86,7 @@ $(document).ready(function () {
     //$("body").removeClass("modal-open");
     $(".modal__overlay").removeClass("active");
     $(".modal__dialog").removeClass("active");
+    $("input").val("");
   });
 
   $(document).keyup(function (e) {
@@ -93,6 +94,7 @@ $(document).ready(function () {
       //$("body").removeClass("modal-open");
       $(".modal__overlay").removeClass("active");
       $(".modal__dialog").removeClass("active");
+      $("input").val("");
     }
   });
 
@@ -133,4 +135,5 @@ $(document).ready(function () {
   $("input[type='tel']").click(function () {
     $(this).setCursorPosition(4); // set position number
   });
+  AOS.init();
 });

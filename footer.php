@@ -2,9 +2,11 @@
    <div class="container">
      <div class="footer-content">
        <div class="footer__logo">
-         <svg width="153" height="175" class="footer__logo-img">
-           <use xlink:href="img\icons.svg#logo-footer"></use>
-         </svg>
+         <a href="index.php" class="logo">
+           <svg width="153" height="175" class="footer__logo-img">
+             <use xlink:href="img\icons.svg#logo-footer"></use>
+           </svg>
+         </a>
        </div>
        <div class="footer__list footer__categories">
          <h3 class="footer__title">All categories</h3>
@@ -113,9 +115,11 @@
              <svg width="20" height="20" class="footer__item-icon footer__item-icon--mr-2">
                <use xlink:href="img\icons.svg#call-footer"></use>
              </svg>
-             Tel (business hours) : 269 1500<br>
-             Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-             Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+             Tel (business hours) : <a href="tel:269 1500" class="footer__phone_link">269 1500</a><br>
+             Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="footer__phone_link">52-56-61-38</a>
+ (08:00 am – 20:00 pm)<br>
+             Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="footer__phone_link">52-56-61-38</a>
+ (08:00 am – 14:00 pm)
            </li>
            <li class="footer__ul-item footer__ul-item--mb-20">
              <svg width="18" height="20" class="footer__item-icon footer__item-icon--mr-3">
@@ -160,6 +164,7 @@
  <script src="./js/jquery.maskedinput.min.js"></script>
  <script src="./js/swiper-bundle.min.js"></script>
  <script src="js/ofi.js"></script>
+ <script src="js/aos.js"></script>
  <script src="js/script.js"></script>
  </body>
 
