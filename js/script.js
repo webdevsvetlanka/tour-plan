@@ -1,36 +1,17 @@
 $(document).ready(function () {
-  //  Вызыв функции для IE
+  //  Вызов функции для IE
   objectFitImages(".js-fit-img");
 
-  // Слайдер в секции HOTEL
-  var hotelSwiper = new Swiper(".hotel__slider-container", {
-    loop: true,
-    autoplay: {
-      delay: 3000,
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
-    effect: "fade",
 
-    navigation: {
-      nextEl: ".slider-btn_next",
-      prevEl: ".slider-btn_prev",
-    },
-  });
+  var mapFrame = document.querySelector(".map__frame");
+  mapFrame.addEventListener("mouseover", initMap);
 
-  // Карта
-
-  ymaps.ready(init);
-  function init() {
-    // Создание карты.
-    var myMap = new ymaps.Map("map", {
-      center: [43.07879784, 5.8914852],
-      zoom: 18,
-    });
-  }
-
+  function initMap() {
+    if (mapFrame.getAttribute("data-src")) {
+      mapFrame.setAttribute("src", mapFrame.getAttribute("data-src"));
+    }
+    mapFrame.removeEventListener("mouseover", initMap);
+  };
   // Слайдер в блоке REVIEWS
   var reviewsSwiper = new Swiper(".reviews__slider-container", {
     loop: true,
@@ -56,7 +37,9 @@ $(document).ready(function () {
     $(window).scroll(function () {
       var yPos = -($window.scrollTop() / $bgobj.data("speed"));
       var coords = "50% " + yPos + "px";
-      $bgobj.css({ backgroundPosition: coords });
+      $bgobj.css({
+        backgroundPosition: coords
+      });
     });
   });
 
@@ -76,6 +59,7 @@ $(document).ready(function () {
 
     $(".modal__overlay").addClass("active");
     $(".modal__dialog").addClass("active");
+    $('body').addClass('open');
   });
 
   // MODAL CLOSE
@@ -88,6 +72,7 @@ $(document).ready(function () {
     $(".modal__overlay").removeClass("active");
     $(".modal__dialog").removeClass("active");
     $("input").val("");
+    $('body').removeClass('open');
   });
 
   $(document).keyup(function (e) {
@@ -96,6 +81,7 @@ $(document).ready(function () {
       $(".modal__overlay").removeClass("active");
       $(".modal__dialog").removeClass("active");
       $("input").val("");
+      $('body').removeClass('open');
     }
   });
 

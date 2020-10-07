@@ -7,14 +7,11 @@
   <meta name="author" content="Svetlana Shchenkova" />
   <title>Grand Hilton Hotel</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" rel="preload" href="./css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/aos.css" />
   <link rel="stylesheet" href="./css/style.css" />
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=7ff04bea-be7d-4c71-b0ed-6b2dc1f4eccc&lang=ru_RU"></script>
 </head>
 
 <body>
@@ -22,9 +19,7 @@
     <div class="container">
       <div class="header-top">
         <a href="index.php" class="logo">
-          <svg width="176" height="19" class="logo-image">
-            <use xlink:href="img\icons.svg#logo-header"></use>
-          </svg>
+          <img src="../img/logo.svg" alt="Логотип">
         </a>
         <form action="#" class="search header__search header__search--mb--hidden">
           <input type="text" class="search__input" placeholder="Search Location" />

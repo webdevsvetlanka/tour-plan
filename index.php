@@ -19,21 +19,11 @@
       <div class="hotel-info">
         <div class="hotel-info__wrapper">
           <div class="rating">
-            <svg width="8" height="8">
-              <use xlink:href="img\icons.svg#star"></use>
-            </svg>
-            <svg width="8" height="8">
-              <use xlink:href="img\icons.svg#star"></use>
-            </svg>
-            <svg width="8" height="8">
-              <use xlink:href="img\icons.svg#star"></use>
-            </svg>
-            <svg width="8" height="8">
-              <use xlink:href="img\icons.svg#star"></use>
-            </svg>
-            <svg width="8" height="8">
-              <use xlink:href="img\icons.svg#star"></use>
-            </svg>
+            <img src="./img/star.svg" alt="star">
+            <img src="./img/star.svg" alt="star">
+            <img src="./img/star.svg" alt="star">
+            <img src="./img/star.svg" alt="star">
+            <img src="./img/star.svg" alt="star">
           </div>
           <h1 class="hotel-title">Grand hilton hotel</h1>
           <span class="offer hotel-info__offer">Flash Offer</span>
@@ -49,20 +39,17 @@
       </div>
     </div>
     <div class="hotel-grid">
-      <div class="slider hotel__slider"  data-aos="fade-right">
+      <div class="slider hotel__slider">
         <div class="swiper-container hotel__slider-container">
           <div class="swiper-wrapper">
+            <div class="swiper-slide hotel__swiper-slide">
+              <img class="js-fit-img" src="./img/hotel-slider/hotel-slide-4.jpg" alt="Slid" />
+            </div>
             <div class="swiper-slide hotel__swiper-slide">
               <img class="js-fit-img" src="./img/hotel-slider/hotel-slide-1.jpg" alt="Slid" />
             </div>
             <div class="swiper-slide hotel__swiper-slide">
               <img class="js-fit-img" src="./img/hotel-slider/hotel-slide-2.jpg" alt="Slid" />
-            </div>
-            <div class="swiper-slide hotel__swiper-slide">
-              <img class="js-fit-img" src="./img/hotel-slider/hotel-slide-3.jpg" alt="Slid" />
-            </div>
-            <div class="swiper-slide hotel__swiper-slide">
-              <img class="js-fit-img" src="./img/hotel-slider/hotel-slide-4.jpg" alt="Slid" />
             </div>
             <div class="swiper-slide hotel__swiper-slide">
               <img class="js-fit-img" src="./img/hotel-slider/hotel-slide-5.jpg" alt="Slid" />
@@ -81,7 +68,7 @@
         </div>
       </div>
       <div class="hotel__additional-info">
-        <div class="booking"  data-aos="fade-left">
+        <div class="booking">
           <div class="booking__info">
             <div class="price">
               <span class="price__start">price starts as</span>
@@ -114,7 +101,12 @@
           </div>
           <button data-toggle="modal" class="button booking-button">View Other Options</button>
         </div>
-        <div class="map" id="map"  data-aos="fade-left"></div>
+        <div class="map" id="map">
+          <iframe class="map__frame"
+              data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13303.08256495726!2d79.79966652324028!3d7.571696247006674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1602059076878!5m2!1sru!2sru"
+              width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -124,7 +116,7 @@
   <div class="container">
     <h2 class="packages-title">Other Packages</h2>
     <div class="packages-wrapper">
-      <div class="packages-card packages-card--big"  data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease">
+      <div class="packages-card packages-card--big" data-aos="fade-up" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image packages-card__block-image--big">
           <img src="./img/packages/img-1.jpg" alt="Packages: image"
             class="packages-card__image packages-card__image--big">
@@ -133,21 +125,11 @@
         <div class="packages-card__inform packages-card__inform--big">
           <div class="packages-card__info packages-card__info--big">
             <div class="rating packages-card__rating packages-card__rating--big">
-              <svg width="8" height="8">
-                <use xlink:href="img\icons.svg#star"></use>
-              </svg>
-              <svg width="8" height="8">
-                <use xlink:href="img\icons.svg#star"></use>
-              </svg>
-              <svg width="8" height="8">
-                <use xlink:href="img\icons.svg#star"></use>
-              </svg>
-              <svg width="8" height="8">
-                <use xlink:href="img\icons.svg#star"></use>
-              </svg>
-              <svg width="8" height="8">
-                <use xlink:href="img\icons.svg#star"></use>
-              </svg>
+              <img src="./img/star.svg" alt="star">
+            <img src="./img/star.svg" alt="star">
+            <img src="./img/star.svg" alt="star">
+            <img src="./img/star.svg" alt="star">
+            <img src="./img/star.svg" alt="star">
             </div>
             <h3 class="packages-card__title packages-card__title--big">Hotel Blue Haven</h3>
             <p class="packages-card__text packages-card__text--big">Aute quis duis excepteur excepteur ipsum cat
@@ -186,7 +168,7 @@
         </div>
       </div>
 
-      <div class="packages-card"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease">
+      <div class="packages-card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image">
           <img src="./img/packages/img-2.jpg" alt="Packages: image" class="packages-card__image">
           <span class="packages-card__sale">Flash Offer</span>
@@ -223,7 +205,7 @@
         </div>
       </div>
 
-      <div class="packages-card"  data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease">
+      <div class="packages-card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image">
           <img src="./img/packages/img-3.jpg" alt="Packages: image" class="packages-card__image">
           <span class="packages-card__sale">Flash Offer</span>
@@ -260,7 +242,7 @@
         </div>
       </div>
 
-      <div class="packages-card"  data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-easing="ease">
+      <div class="packages-card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image">
           <img src="./img/packages/img-4.jpg" alt="Packages: image" class="packages-card__image">
           <span class="packages-card__sale">Flash Offer</span>
@@ -297,7 +279,7 @@
         </div>
       </div>
 
-      <div class="packages-card"  data-aos="fade-up" data-aos-delay="900" data-aos-duration="500" data-aos-easing="ease">
+      <div class="packages-card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="500" data-aos-easing="ease">
         <div class="packages-card__block-image">
           <img src="./img/packages/img-5.jpg" alt="Packages: image" class="packages-card__image">
           <span class="packages-card__sale">Flash Offer</span>
@@ -491,28 +473,32 @@
   <div class="container">
     <h2 class="activities__title">Other Activities</h2>
     <div class="activities-wrapper">
-      <div class="activities__card activity"  data-aos="zoom-in"  data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease">
+      <div class="activities__card activity" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-easing="ease">
         <img src="./img/activities-card/card-1.jpg" alt="Card: activity" class="activity-imgbg">
         <div class="activity-text">
           <h3 class="activity-title">The curious corner<br> of chamarel</h3>
           <button class="button activity-button">Book Now</button>
         </div>
       </div>
-      <div class="activities__card activity"  data-aos="zoom-in"  data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease">
+      <div class="activities__card activity" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000"
+        data-aos-easing="ease">
         <img src="./img/activities-card/card-2.jpg" alt="Card: activity" class="activity-imgbg js-fit-img">
         <div class="activity-text">
           <h3 class="activity-title">Gymkhana club golf course</h3>
           <button class="button activity-button">Book Now</button>
         </div>
       </div>
-      <div class="activities__card activity"  data-aos="zoom-in"  data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease">
+      <div class="activities__card activity" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000"
+        data-aos-easing="ease">
         <img src="./img/activities-card/card-3.jpg" alt="Card: activity" class="activity-imgbg js-fit-img">
         <div class="activity-text">
           <h3 class="activity-title">Tamarind falls hiking<br> trip - full day</h3>
           <button class="button activity-button">Book Now</button>
         </div>
       </div>
-      <div class="activities__card activity"  data-aos="zoom-in"  data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease">
+      <div class="activities__card activity" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="1000"
+        data-aos-easing="ease">
         <img src="./img/activities-card/card-4.jpg" alt="Card: activity" class="activity-imgbg js-fit-img">
         <div class="activity-text">
           <h3 class="activity-title">The blue marine discovery quest</h3>

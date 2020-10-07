@@ -158,14 +158,33 @@
      </div>
    </div>
  </footer>
-
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ <script src="./js/jquery.min.js"></script>
  <script src="./js/jquery.validate.min.js"></script>
  <script src="./js/jquery.maskedinput.min.js"></script>
  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+   var hotelSwiper = new Swiper(".hotel__slider-container", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+    effect: "fade",
+
+    navigation: {
+      nextEl: ".slider-btn_next",
+      prevEl: ".slider-btn_prev",
+    },
+  });
+ </script>
  <script src="js/ofi.js"></script>
  <script src="js/aos.js"></script>
  <script src="js/script.js"></script>
+
  </body>
 
  </html>

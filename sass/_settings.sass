@@ -1,14 +1,77 @@
 *, *::before, *::after
   box-sizing: border-box
+
+@font-face
+  font-family: 'Mulish'
+  src: url('../font/Mulish-SemiBold.woff2') format('woff2')
+  src: url('../font/Mulish-SemiBold.woff') format('woff')
+  font-weight: 600
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Mulish'
+  src: url('../font/Mulish-Bold.woff2') format('woff2')
+  src: url('../font/Mulish-Bold.woff') format('woff')
+  font-weight: bold
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Mulish'
+  src: url('../font/Mulish-Light.woff2') format('woff2')
+  // src: url('../font/Mulish-Light.woff') format('woff')
+  font-weight: 300
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Mulish'
+  src: url('../font/Mulish-Regular.woff2') format('woff2')
+  src: url('../font/Mulish-Regular.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Nunito'
+  src: url('../font/Nunito-SemiBold.woff2') format('woff2')
+  src: url('../font/Nunito-SemiBold.woff') format('woff')
+  font-weight: 600
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Nunito'
+  src: url('../font/Nunito-Bold.woff2') format('woff2')
+  src: url('../font/Nunito-Bold.woff') format('woff')
+  font-weight: 700
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Nunito'
+  src: url('../font/Nunito-ExtraBold.woff2') format('woff2')
+  src: url('../font/Nunito-ExtraBold.woff') format('woff')
+  font-weight: 800
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Nunito'
+  src: url('../font/Nunito-Regular.woff2') format('woff2')
+  src: url('../font/Nunito-Regular.woff') format('woff')
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+
 body
   font-family: 'Mulish', sans-serif
   color: $text-color
   background-color: $secondary
+  &.open
+    overflow: hidden
 
-  // &.modal-open
-
-  //   position: fixed
-  //   width: 100%
 .container
   max-width: 1110px
   margin: auto
@@ -40,23 +103,6 @@ em
   font-size: 11px
   font-weight: 700
   text-align: end
-
-// @keyframes shake
-//   0% transform: translate(2px, 1px) rotate(0deg)
-//   10% transform: translate(-1px, -2px) rotate(-1deg)
-//   20% transform: translate(-3px, 0px) rotate(1deg)
-//   30% transform: translate(0px, 2px) rotate(0deg)
-//   40% transform: translate(1px, -1px) rotate(1deg)
-//   50% transform: translate(-1px, 2px) rotate(-1deg)
-//   60% transform: translate(-3px, 1px) rotate(0deg)
-//   70% transform: translate(2px, 1px) rotate(-1deg)
-//   80% transform: translate(-1px, -1px) rotate(1deg)
-//   90% transform: translate(2px, 2px) rotate(0deg)
-//   100% transform: translate(1px, -2px) rotate(-1deg)
-
-// .shake
-//   -webkit-animation-name: shake
-//   -webkit-animation-duration: 0.8s
-//   -webkit-transform-origin: 50% 50%
-//   -webkit-animation-iteration-count: infinite
-//   -webkit-animation-timing-function: linear
+.lazyframe
+  width: 100%
+  height: 100%
